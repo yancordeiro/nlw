@@ -24,7 +24,7 @@ class Profile extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Padding(
-                padding: const EdgeInsets.only(bottom: 20),
+                padding: const EdgeInsets.only(bottom: 35),
                 child: ClipPath(
                   clipper: HexagonalClipper(reverse: true),
                   child: Container(
@@ -39,7 +39,7 @@ class Profile extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(bottom: 10),
+                padding: const EdgeInsets.only(bottom: 30),
                 child: Text(
                   userName,
                   style: TextStyle(
@@ -49,24 +49,27 @@ class Profile extends StatelessWidget {
                   ),
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(right: 5.0),
-                    child: Container(
-                        width: 16,
-                        height: 16,
-                        child: Image.asset('assets/images/github_icon.png')),
-                  ),
-                  Text(
-                    'golden_luke',
-                    style: TextStyle(color: textColor, fontSize: 16),
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.only(bottom: 50),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 5.0),
+                      child: Container(
+                          width: 16,
+                          height: 16,
+                          child: Image.asset('assets/images/github_icon.png')),
+                    ),
+                    Text(
+                      'golden_luke',
+                      style: TextStyle(color: textColor, fontSize: 16),
+                    ),
+                  ],
+                ),
               ),
               Padding(
-                padding: const EdgeInsets.all(50),
+                padding: const EdgeInsets.only(bottom: 80, right: 50, left: 50),
                 child: Text(
                   description,
                   textAlign: TextAlign.center,
@@ -75,7 +78,7 @@ class Profile extends StatelessWidget {
               ),
               Padding(
                 padding:
-                    const EdgeInsets.only(left: 50.0, right: 50.0, bottom: 100),
+                    const EdgeInsets.only(left: 50.0, right: 50.0, bottom: 130),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
